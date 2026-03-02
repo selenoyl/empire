@@ -1,0 +1,14 @@
+{
+  "id": "civ8",
+  "name": "Civilization 8",
+  "leaderName": "Leader 8",
+  "primaryColor": "#888888",
+  "secondaryColor": "#5D6FC0",
+  "emblem": "emblem_8",
+  "uniqueAbilityId": "ability_8",
+  "uniqueUnitOrBuildingId": "unique_8",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 2 },
+    { "target": "UnitStats", "operation": "add", "key": "Move:Scout", "value": 0 }
+  ]
+}

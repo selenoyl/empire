@@ -1,0 +1,14 @@
+{
+  "id": "civ4",
+  "name": "Civilization 4",
+  "leaderName": "Leader 4",
+  "primaryColor": "#444444",
+  "secondaryColor": "#2EB7E0",
+  "emblem": "emblem_4",
+  "uniqueAbilityId": "ability_4",
+  "uniqueUnitOrBuildingId": "unique_4",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 1 },
+    { "target": "UnitStats", "operation": "add", "key": "Move:Scout", "value": 0 }
+  ]
+}
