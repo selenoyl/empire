@@ -21,8 +21,6 @@ $artifactsRoot = Join-Path $repoRoot "artifacts"
 $publishDir = Join-Path $artifactsRoot "publish/$Runtime"
 $zipPath = Join-Path $artifactsRoot "Empire-$Version-$Runtime.zip"
 
-$launchedFromExplorer = $Host.Name -eq "ConsoleHost" -and -not $env:CI
-
 try {
     Ensure-Command -Name "dotnet"
 
@@ -64,7 +62,7 @@ catch {
     exit 1
 }
 finally {
-    if ($PauseOnExit -or $launchedFromExplorer) {
+    if ($PauseOnExit) {
         Read-Host "Press Enter to close"
     }
 }

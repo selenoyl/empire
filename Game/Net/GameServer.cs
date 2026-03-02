@@ -2,6 +2,7 @@ using System.Collections.Concurrent;
 using System.Net;
 using System.Net.Sockets;
 using System.Text.Json;
+using System.Threading;
 using Game.CoreSim;
 using Game.Diagnostics;
 
@@ -11,7 +12,8 @@ public sealed class GameServer
 {
     private readonly TcpListener _listener;
     private readonly ConcurrentDictionary<int, TcpClient> _clients = new();
-    private int _nextSpectatorId = -1;
+    private int _nextSpectatorId = 0;
+    private readonly object _clientAssignGate = new();
     private readonly Simulator _sim;
     public string Version { get; }
 
@@ -46,7 +48,14 @@ public sealed class GameServer
             return;
         }
 
-        var playerId = hs.Spectator ? _nextSpectatorId-- : AllocateHumanPlayerId();
+        int playerId;
+        lock (_clientAssignGate)
+        {
+            playerId = hs.Spectator ? Interlocked.Decrement(ref _nextSpectatorId) : AllocateHumanPlayerId();
+            if (playerId >= 0)
+                _clients[playerId] = client;
+        }
+
         if (!hs.Spectator && playerId < 0)
         {
             await Protocol.WriteAsync(ns, new ServerEventMsg(false, "No available human player slots", _sim.State.ComputeStateHash(), Version), ct);
@@ -54,7 +63,6 @@ public sealed class GameServer
             return;
         }
 
-        _clients[playerId] = client;
         DebugTrace.Record("net.server", $"client accepted playerId={playerId} spectator={hs.Spectator}");
         await Protocol.WriteAsync(ns, new ServerSnapshotMsg(SnapshotMapper.ToDto(_sim.State)), ct);
 
