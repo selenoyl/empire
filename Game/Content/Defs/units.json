@@ -1,0 +1,10 @@
+[
+  {"id":"Settler","move":2,"melee":0},
+  {"id":"Warrior","move":2,"melee":24},
+  {"id":"Scout","move":3,"melee":14},
+  {"id":"Archer","move":2,"ranged":18,"range":2},
+  {"id":"Builder","move":2,"melee":0},
+  {"id":"Swordsman","move":2,"melee":32,"requiresResource":"Iron"},
+  {"id":"Spearman","move":2,"melee":26},
+  {"id":"Horseman","move":4,"melee":28,"requiresResource":"Horse"}
+]
