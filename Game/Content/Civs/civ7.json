@@ -1,0 +1,14 @@
+{
+  "id": "civ7",
+  "name": "Civilization 7",
+  "leaderName": "Leader 7",
+  "primaryColor": "#777777",
+  "secondaryColor": "#51C1C8",
+  "emblem": "emblem_7",
+  "uniqueAbilityId": "ability_7",
+  "uniqueUnitOrBuildingId": "unique_7",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 1 },
+    { "target": "UnitStats", "operation": "add", "key": "Move:Scout", "value": 1 }
+  ]
+}

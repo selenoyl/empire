@@ -1,0 +1,5 @@
+[
+  {"id":"Farm","food":1},
+  {"id":"Mine","production":1},
+  {"id":"LumberMill","food":1,"production":1}
+]

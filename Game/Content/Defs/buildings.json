@@ -1,0 +1,8 @@
+[
+  {"id":"Monument","culture":1},
+  {"id":"Granary","food":1},
+  {"id":"Library","science":2},
+  {"id":"Barracks","combat":1},
+  {"id":"Market","gold":2},
+  {"id":"Workshop","production":2}
+]

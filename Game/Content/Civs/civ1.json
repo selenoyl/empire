@@ -1,0 +1,14 @@
+{
+  "id": "civ1",
+  "name": "Civilization 1",
+  "leaderName": "Leader 1",
+  "primaryColor": "#111111",
+  "secondaryColor": "#0BADF8",
+  "emblem": "emblem_1",
+  "uniqueAbilityId": "ability_1",
+  "uniqueUnitOrBuildingId": "unique_1",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 1 },
+    { "target": "UnitStats", "operation": "add", "key": "Move:Scout", "value": 1 }
+  ]
+}
