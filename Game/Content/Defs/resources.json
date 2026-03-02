@@ -1,0 +1,5 @@
+[
+  {"id":"Wheat","activateWith":"Farm"},
+  {"id":"Iron","activateWith":"Mine"},
+  {"id":"Horse","activateWith":"Farm"}
+]

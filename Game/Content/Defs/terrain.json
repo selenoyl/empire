@@ -1,0 +1,6 @@
+{
+  "Grass":{"food":2,"prod":0},
+  "Plains":{"food":1,"prod":1},
+  "Hills":{"food":0,"prod":2},
+  "Desert":{"food":0,"gold":1}
+}
