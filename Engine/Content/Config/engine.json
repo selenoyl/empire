@@ -1,0 +1,5 @@
+{
+  "title": "Empire Sandbox",
+  "fixedTimestepHz": 60,
+  "startVSync": true
+}

@@ -1,0 +1,14 @@
+{
+  "id": "civ10",
+  "name": "Civilization 10",
+  "leaderName": "Leader 10",
+  "primaryColor": "#AAAAAA",
+  "secondaryColor": "#74CBB0",
+  "emblem": "emblem_10",
+  "uniqueAbilityId": "ability_10",
+  "uniqueUnitOrBuildingId": "unique_10",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 1 },
+    { "target": "UnitStats", "operation": "add", "key": "Move:Scout", "value": 0 }
+  ]
+}

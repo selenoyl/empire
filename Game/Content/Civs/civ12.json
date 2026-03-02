@@ -1,0 +1,14 @@
+{
+  "id": "civ12",
+  "name": "Civilization 12",
+  "leaderName": "Leader 12",
+  "primaryColor": "#398634",
+  "secondaryColor": "#31C5F0",
+  "emblem": "emblem_12",
+  "uniqueAbilityId": "ability_12",
+  "uniqueUnitOrBuildingId": "unique_12",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 0 },
+    { "target": "ProductionRate", "operation": "add", "key": "*", "value": 0 }
+  ]
+}

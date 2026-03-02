@@ -1,0 +1,14 @@
+{
+  "id": "civ17",
+  "name": "Civilization 17",
+  "leaderName": "Leader 17",
+  "primaryColor": "#517E1F",
+  "secondaryColor": "#468314",
+  "emblem": "emblem_17",
+  "uniqueAbilityId": "ability_17",
+  "uniqueUnitOrBuildingId": "unique_17",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 1 },
+    { "target": "ProductionRate", "operation": "add", "key": "*", "value": 1 }
+  ]
+}

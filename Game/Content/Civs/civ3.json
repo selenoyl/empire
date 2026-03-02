@@ -1,0 +1,14 @@
+{
+  "id": "civ3",
+  "name": "Civilization 3",
+  "leaderName": "Leader 3",
+  "primaryColor": "#333333",
+  "secondaryColor": "#2309E8",
+  "emblem": "emblem_3",
+  "uniqueAbilityId": "ability_3",
+  "uniqueUnitOrBuildingId": "unique_3",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 0 },
+    { "target": "UnitStats", "operation": "add", "key": "Move:Scout", "value": 1 }
+  ]
+}
