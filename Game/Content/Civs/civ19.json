@@ -1,0 +1,14 @@
+{
+  "id": "civ19",
+  "name": "Civilization 19",
+  "leaderName": "Leader 19",
+  "primaryColor": "#5B147D",
+  "secondaryColor": "#4ECEBC",
+  "emblem": "emblem_19",
+  "uniqueAbilityId": "ability_19",
+  "uniqueUnitOrBuildingId": "unique_19",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 3 },
+    { "target": "ProductionRate", "operation": "add", "key": "*", "value": 1 }
+  ]
+}

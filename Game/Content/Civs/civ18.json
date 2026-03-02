@@ -1,0 +1,14 @@
+{
+  "id": "civ18",
+  "name": "Civilization 18",
+  "leaderName": "Leader 18",
+  "primaryColor": "#56494E",
+  "secondaryColor": "#4AA8E8",
+  "emblem": "emblem_18",
+  "uniqueAbilityId": "ability_18",
+  "uniqueUnitOrBuildingId": "unique_18",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 2 },
+    { "target": "ProductionRate", "operation": "add", "key": "*", "value": 0 }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "civ9",
+  "name": "Civilization 9",
+  "leaderName": "Leader 9",
+  "primaryColor": "#999999",
+  "secondaryColor": "#691DB8",
+  "emblem": "emblem_9",
+  "uniqueAbilityId": "ability_9",
+  "uniqueUnitOrBuildingId": "unique_9",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 0 },
+    { "target": "UnitStats", "operation": "add", "key": "Move:Scout", "value": 1 }
+  ]
+}
