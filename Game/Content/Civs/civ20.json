@@ -1,0 +1,14 @@
+{
+  "id": "civ20",
+  "name": "Civilization 20",
+  "leaderName": "Leader 20",
+  "primaryColor": "#5FDFAC",
+  "secondaryColor": "#52F490",
+  "emblem": "emblem_20",
+  "uniqueAbilityId": "ability_20",
+  "uniqueUnitOrBuildingId": "unique_20",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 0 },
+    { "target": "ProductionRate", "operation": "add", "key": "*", "value": 0 }
+  ]
+}

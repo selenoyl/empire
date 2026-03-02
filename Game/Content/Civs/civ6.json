@@ -1,0 +1,14 @@
+{
+  "id": "civ6",
+  "name": "Civilization 6",
+  "leaderName": "Leader 6",
+  "primaryColor": "#666666",
+  "secondaryColor": "#4613D0",
+  "emblem": "emblem_6",
+  "uniqueAbilityId": "ability_6",
+  "uniqueUnitOrBuildingId": "unique_6",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 0 },
+    { "target": "UnitStats", "operation": "add", "key": "Move:Scout", "value": 0 }
+  ]
+}

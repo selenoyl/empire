@@ -1,0 +1,14 @@
+{
+  "id": "civ16",
+  "name": "Civilization 16",
+  "leaderName": "Leader 16",
+  "primaryColor": "#4CB2F0",
+  "secondaryColor": "#425D40",
+  "emblem": "emblem_16",
+  "uniqueAbilityId": "ability_16",
+  "uniqueUnitOrBuildingId": "unique_16",
+  "modifiers": [
+    { "target": "CityYields", "operation": "add", "key": "Science", "value": 0 },
+    { "target": "ProductionRate", "operation": "add", "key": "*", "value": 0 }
+  ]
+}
